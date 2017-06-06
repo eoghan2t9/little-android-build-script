@@ -8,6 +8,7 @@ export ANDROID_BUILD_DIR=$(pwd)
 chmod a+x otacommit.sh upload-sftp.sh
 export days_to_log=1
 export askvariant=1
+cd $ROMPREFIX/
 
 if [ $REPOSYNC -eq 1 ]
 then
