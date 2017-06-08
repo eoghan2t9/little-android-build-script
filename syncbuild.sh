@@ -31,7 +31,7 @@ echo " "
 echo "Build completed."
 echo " "
 
-cd $OUT
+cd out/target/product/$1
 
 export FILENAME=$(ls |grep -m 1 $ROMPREFIX*.zip)
 export MD5SUMNAME=$(ls |grep -m 1 $ROMPREFIX*.md5sum)
