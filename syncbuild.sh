@@ -20,7 +20,7 @@ else
     echo " "
 fi
 
-. build/envsetup.sh && breakfast $DEVICECODENAME
+. build/envsetup.sh && lunch $DEVICECODENAME && mka bacon 
 
 if [ $MAKECLEAN -eq 1 ]
 then
