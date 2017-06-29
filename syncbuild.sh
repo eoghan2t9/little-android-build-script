@@ -10,6 +10,7 @@ export WITH_ROOT_METHOD=magisk
 export days_to_log=1
 export askvariant=1
 export RR_BUILDTYPE=Official
+export USE_CCACHE=1
 cd $ROMPREFIX/
 
 if [ $REPOSYNC -eq 1 ]
