@@ -20,14 +20,14 @@ else
     echo " "
 fi
 
-. build/envsetup.sh && lunch $DEVICECODENAME && mka bacon 
-
 if [ $MAKECLEAN -eq 1 ]
 then
     make clean && brunch $DEVICECODENAME
 else
     make installclean && brunch $DEVICECODENAME
 fi
+
+. build/envsetup.sh && lunch $DEVICECODENAME && mka bacon 
 
 echo " "
 echo "Build completed."
