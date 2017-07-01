@@ -24,10 +24,12 @@ fi
 
 if [ $MAKECLEAN -eq 1 ]
 then
-    make clean && lunch $DEVICECODENAME && mka bacon 
+    make clean && lunch $DEVICECODENAME && mka bacon
 else
-    make installclean && lunch $DEVICECODENAME && mka bacon 
-fi 
+    make installclean && lunch $DEVICECODENAME && mka bacon
+fi
+
+lunch $DEVICECODENAME && mka bacon
 
 echo " "
 echo "Build completed."
